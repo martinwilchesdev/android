@@ -16,16 +16,16 @@ class MainActivity : ComponentActivity() {
          * mediante funciones que admiten composicion.
          *
          * Dentro de setContent() se pueden llamar a todas las funciones marcadas
-         * con la notacion @Composable.
+         * con la anotacion @Composable.
          *
-         * La notacion del composable le indica al compilador de Kotlin que Jetpack Compose
+         * La anotacion del composable le indica al compilador de Kotlin que Jetpack Compose
          * usa esta funcion para generar la IU.
          * */
         setContent {
             GreetingCardTheme {
                 /**
-                 * Un Surface es un contenedor que representa una seccion de la IU
-                 * en la que se puede modificar el aspecto como el borde o el color de fondo
+                 * Un Surface() es un contenedor que representa una seccion de la IU
+                 * en la que se pueden realizar modificaciones del aspecto como el borde o el color de fondo
                  * */
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -39,11 +39,11 @@ class MainActivity : ComponentActivity() {
 }
 
 /**
- * La funcion Greeting() corresponde a la componabilidad.
+ * La funcion Greeting() es una funcion de componiblidad.
  *
- * Una funcion de componibilidad toma alguna entrada y genera lo que se muestra en pantalla.
+ * Una funcion de componibilidad toma alguna entrada y genera la interfaz que se muestra en pantalla.
  *
- * Los nombres de las funciones @Composable inician con mayuscula.
+ * Los nombres de las funciones @Composable inician con mayuscula, por ejemplo "Greeting()".
  * */
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -76,9 +76,11 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
  * La funcion GreetingPreview() es una funcion que permite ver como se ve la aplicacion
  * sin tener que compilarla completamente.
  *
- * Para que una funcion sea de vista previa, se debe agregar la notacion @Preview().
+ * Para que una funcion sea de vista previa, se debe agregar la anotacion @Preview().
  *
- * La notacion @Preview() recibe un parametro llamado showBackground. Si este parametro
+ * Las funciones de vista previa pueden ser visualizadas desde el panel de diseño del IDE.
+ *
+ * La anotacion @Preview() recibe un parametro llamado showBackground. Si este parametro
  * se establece como verdadero se agregara un fondo a la vista previa de la aplicacion.
  * */
 @Preview(showBackground = true)
