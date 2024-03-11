@@ -6,6 +6,8 @@ La flexibilidad y extensibilidad de XML permite definir diseños de la IU de apl
 
 La IU de de una aplicacion de Android se compila como una jerarquia de contencion de componentes (widgets).
 
+Jerarquia de contencion de una aplicacion para Android.
+
     -| ViewGroup
         -| ViewGroup
             -| View
@@ -13,8 +15,6 @@ La IU de de una aplicacion de Android se compila como una jerarquia de contencio
             -| View
         -| View
         -| View
-        
-    ** Jerarquia de contencion de una aplicacion para Android
 
 La jerarquia de la IU visible se basa en la contencion, es decir, un componente tiene 1 o mas componentes dentro de el.
 
@@ -32,4 +32,3 @@ Los elementos XML pueden tener atributos
             text="Hello World">
         </TextView>
     </ConstraintLayout>
-
