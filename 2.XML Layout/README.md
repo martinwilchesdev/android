@@ -64,3 +64,13 @@ Para acceder a un componente de la IU se utiliza el archivo `R.java`
 - Se define una variable `button`, a la cual se le asignara un valor de manera posterior. Esta variable es de tipo `Button` y se le asignara el boton que contenga el id `main_button`.
 - El metodo `findViewById()` recibe como parametro el id del elemento de la interfaz que sera asignado a la variable button.
 - Esta variable tiene acceso a diversas propiedades que permiten manipular el elemento de la interfaz al que referencian.
+
+## Directorio manifests
+
+El manifiesto de Android es un archivo XML que describe informacion esencial sobre la aplicacion para el sistema operativo Android.
+
+Algunas de las cosas que se describen en el manifiesto incluyen:
+- Informacion del paquete
+- Componentes de la aplicacion
+- Permisos
+- Configuracion de la aplicacion
